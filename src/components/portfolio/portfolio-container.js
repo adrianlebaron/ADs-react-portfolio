@@ -30,7 +30,7 @@ export default class PortfolioContainer extends Component {
       .then(response => {
         this.setState({
           data: response.data.portfolio_items
-        })
+        });
       })
       .catch(error => {
         console.log(error);
